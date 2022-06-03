@@ -6,7 +6,7 @@ public class Box : MonoBehaviour
 {
     public Rigidbody2D box;
     public GameObject boxes;
-    public bool isMetal = false;
+    public bool isMetal = false, isInHand = false;
 
     public Move Move;
 
@@ -15,6 +15,7 @@ public class Box : MonoBehaviour
         if(collision.CompareTag("Player") && Input.GetKey("D"))
         {
             box.velocity = new Vector2(Move.speed, box.velocity.y);
+
         }
         else if(collision.CompareTag("Player") && Input.GetKey("A"))
         {
@@ -30,4 +31,6 @@ public class Box : MonoBehaviour
             Destroy(boxes);           
         }
     }
+
+    
 }
