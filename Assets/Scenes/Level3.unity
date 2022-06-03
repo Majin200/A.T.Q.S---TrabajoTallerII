@@ -917,13 +917,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.961273
       objectReference: {fileID: 0}
     - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.4775333
+      value: -4.1000004
       objectReference: {fileID: 0}
     - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
         type: 3}
@@ -964,6 +979,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1601,7 +1621,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7758622, y: 1}
+    m_SensorSize: {x: 2.1411765, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2825,13 +2845,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 81.549995
       objectReference: {fileID: 0}
     - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.73
+      value: -8.352467
       objectReference: {fileID: 0}
     - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
         type: 3}
@@ -2872,6 +2907,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -2964,13 +3004,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5143738
       objectReference: {fileID: 0}
     - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.4775333
+      value: -4.1
       objectReference: {fileID: 0}
     - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
         type: 3}
@@ -3011,6 +3066,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -3599,13 +3659,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 63.689995
       objectReference: {fileID: 0}
     - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.83
+      value: -8.452467
       objectReference: {fileID: 0}
     - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
         type: 3}
@@ -3646,6 +3721,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535446569174033046, guid: 6832422d7b8d4714c82aa5149ed4bee1,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

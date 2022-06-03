@@ -11,9 +11,67 @@ public class Move : MonoBehaviour
     public Rigidbody2D player;
     public LayerMask Floor;
     public GameObject origin, origin1, origin2, originUP1, originUP2, Hand, handCheck;
+    public Animator animator;
+    float inputHorizontal;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     public void Update()
     {
+        if(Input.GetKey(KeyCode.Space))
+        {
+            animator.ResetTrigger("isNotJumping");
+            animator.SetTrigger("isJumping");
+        }
+        if(Input.GetKeyUp(KeyCode.Space))
+        {
+            animator.ResetTrigger("isJumping");
+            animator.SetTrigger("isNotJumping");
+        }
+        
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            animator.SetFloat("isMoving", 3);
+        }
+
+        if(Input.GetKeyUp(KeyCode.A))
+        {
+            animator.SetFloat("isMoving", 0);
+        }
+
+        if(Input.GetKeyDown(KeyCode.D))
+        {
+            animator.SetFloat("isMoving", 3);
+        }
+
+        if(Input.GetKeyUp(KeyCode.D))
+        {
+            animator.SetFloat("isMoving", 1);
+        }
+
+        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            animator.SetFloat("isMoving", 3);
+        }
+
+        if(Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            animator.SetFloat("isMoving", 0);
+        }
+
+        if(Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            animator.SetFloat("isMoving", 3);
+        }
+
+        if(Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            animator.SetFloat("isMoving", 1);
+        }
+
         player.velocity = new Vector3(Input.GetAxisRaw("Horizontal") * speed, player.velocity.y, 0);
 
         RaycastHit2D raycastForFloor = Physics2D.Raycast(origin.transform.position, Vector2.down, 0.52f, Floor);
@@ -98,6 +156,23 @@ public class Move : MonoBehaviour
             }
         }
 
+
+    }
+
+    void FixedUpdate()
+    {
+        inputHorizontal = Input.GetAxisRaw("Horizontal");
+
+
+        if(inputHorizontal > 0)
+        {
+            gameObject.transform.localScale = new Vector3(7, 7, 7);
+        }
+
+        if(inputHorizontal < 0)
+        {
+            gameObject.transform.localScale = new Vector3(-7, 7, 7);
+        }
 
     }
 
