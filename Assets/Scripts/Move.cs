@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+    public AudioSource jumpsound;
     public int speed, jump;
     private float X, tiempoAire;
     public bool isPlayerOne;
@@ -14,6 +15,7 @@ public class Move : MonoBehaviour
     public GameObject origin, origin1, Hand, handCheck;
     public Animator animator;
     float inputHorizontal;
+    public ParticleSystem dust;
 
     private void Awake()
     {
@@ -21,6 +23,11 @@ public class Move : MonoBehaviour
         player = GetComponent<Rigidbody2D>();
         player2 = GetComponent<Rigidbody2D>();
 
+    }
+
+    void Start()
+    {
+        jumpsound = GetComponent<AudioSource>();
     }
 
     public void Update()
@@ -40,6 +47,8 @@ public class Move : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
+            jumpsound.Play();
+            CreateDust();
             animator.ResetTrigger("isNotJumping");
             animator.SetTrigger("isJumping");
         }
@@ -139,6 +148,8 @@ public class Move : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
+            jumpsound.Play();
+            CreateDust();
             animator.ResetTrigger("isNotJumping");
             animator.SetTrigger("isJumping");
         }
@@ -235,6 +246,11 @@ public class Move : MonoBehaviour
             }
         }
 
+    }
+
+    void CreateDust()
+    {
+        dust.Play();
     }
 
     void FixedUpdate()
